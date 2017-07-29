@@ -46,7 +46,7 @@ public class ImageActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(b){
-                    builder.append("Apple");
+                    builder.append(" & Apple");
                 }
             }
         });
@@ -56,7 +56,7 @@ public class ImageActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(b){
-                    builder.append("Windows");
+                    builder.append(" & Windows");
                 }
             }
         });
