@@ -8,7 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/activity" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/compoundview" />
+            <option value="$PROJECT_DIR$/interactivecommunication" />
+            <option value="$PROJECT_DIR$/myapplication" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

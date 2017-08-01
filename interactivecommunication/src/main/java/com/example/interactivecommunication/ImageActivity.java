@@ -41,7 +41,6 @@ public class ImageActivity extends AppCompatActivity {
             }
         });
 
-
         ((CheckBox)findViewById(R.id.cbapple)).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
