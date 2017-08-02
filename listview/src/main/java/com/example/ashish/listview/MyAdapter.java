@@ -5,6 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
 import java.util.List;
 
 /**
@@ -21,7 +24,6 @@ public class MyAdapter extends BaseAdapter {
     public MyAdapter(Context context, List<MyItem> items) {
         this.context = context;
         this.items = items;
-
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -39,11 +41,13 @@ public class MyAdapter extends BaseAdapter {
     public long getItemId(int pos) {
         return pos * 2;
     }
-
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(int pos, View view, ViewGroup viewGroup) {
         View viewInflated = inflater.inflate(R.layout.list_item, null, false);
-
+        TextView txv = viewInflated.findViewById(R.id.txt);
+        txv.setText(items.get(pos).getName());
+        ImageView imageView = viewInflated.findViewById(R.id.img);
+        imageView.setImageResource(items.get(pos).getImage());
         return viewInflated;
 
     }
