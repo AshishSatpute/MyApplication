@@ -1,1 +1,1 @@
-include ':app', ':activity', ':interactivecommunication', ':myapplication', ':compoundview'
+include ':app', ':activity', ':interactivecommunication', ':myapplication', ':compoundview', ':listview'
