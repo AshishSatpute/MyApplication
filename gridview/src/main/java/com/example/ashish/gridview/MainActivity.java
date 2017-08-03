@@ -28,17 +28,41 @@ public class MainActivity extends AppCompatActivity{
 
     private void complexList() {
         items  = new ArrayList<>();
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Android"));
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Windows"));
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Apple"));
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Rim"));
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"more...."));
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Android"));
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Android"));
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Android"));
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Android"));
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Android"));
-        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Android"));
+        items.add(new MyItem(R.drawable.ic_badoo,"Badoo"));
+        items.add(new MyItem(R.drawable.ic_behance,"Behance"));
+        items.add(new MyItem(R.drawable.ic_deviantart,"Apple"));
+        items.add(new MyItem(R.drawable.ic_deviantart,"Deviantart"));
+        items.add(new MyItem(R.drawable.ic_facebook,"Facebook"));
+        items.add(new MyItem(R.drawable.ic_flickr,"Flickr"));
+        items.add(new MyItem(R.drawable.ic_google_plus,"Google"));
+        items.add(new MyItem(R.drawable.ic_instagram,"Instragram"));
+        items.add(new MyItem(R.drawable.ic_lastfm,"Lastfm"));
+        items.add(new MyItem(R.drawable.ic_linkedin,"LinkedIn"));
+        items.add(new MyItem(R.drawable.ic_pinterest,"Ponterest"));
+        items.add(new MyItem(R.drawable.ic_soundcloud,"Soundcloud"));
+        items.add(new MyItem(R.drawable.ic_swarm,"Swarm"));
+        items.add(new MyItem(R.drawable.ic_tumblr,"Tumblr"));
+        items.add(new MyItem(R.drawable.ic_twitter,"Twitter"));
+        items.add(new MyItem(R.drawable.ic_vk,"Vk"));
+        items.add(new MyItem(R.drawable.ic_badoo,"Badoo"));
+        items.add(new MyItem(R.drawable.ic_behance,"Behance"));
+        items.add(new MyItem(R.drawable.ic_deviantart,"Deviantart"));
+        items.add(new MyItem(R.drawable.ic_facebook,"Facebook"));
+        items.add(new MyItem(R.drawable.ic_flickr,"Flickr"));
+        items.add(new MyItem(R.drawable.ic_google_plus,"Google"));
+        items.add(new MyItem(R.drawable.ic_instagram,"Instragram"));
+        items.add(new MyItem(R.drawable.ic_lastfm,"Lastfm"));
+        items.add(new MyItem(R.drawable.ic_linkedin,"LinkedIn"));
+        items.add(new MyItem(R.drawable.ic_pinterest,"Ponterest"));
+        items.add(new MyItem(R.drawable.ic_soundcloud,"Soundcloud"));
+        items.add(new MyItem(R.drawable.ic_swarm,"Swarm"));
+        items.add(new MyItem(R.drawable.ic_tumblr,"Tumblr"));
+        items.add(new MyItem(R.drawable.ic_twitter,"Twitter"));
+        items.add(new MyItem(R.drawable.ic_vk,"Vk"));
+
+
+
+
 
 
 
