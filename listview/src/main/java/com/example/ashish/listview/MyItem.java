@@ -24,6 +24,7 @@ public class MyItem {
     int image;
     String name;
 
+
     public MyItem(int image, String name) {
         this.image = image;
         this.name = name;
