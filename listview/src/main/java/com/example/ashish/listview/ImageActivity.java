@@ -19,7 +19,7 @@ public class ImageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_image);
         Intent intent = getIntent();
         int position = intent.getIntExtra("poss", 0);
-        Log.e("KAILAS", "onCreate: " + position);
+        Log.e("ASHISH", "onCreate: " + position);
 
         MyItem myItem = MainActivity.items.get(position);
         ((ImageView) findViewById(R.id.imageView)).setImageResource(myItem.getImage());
