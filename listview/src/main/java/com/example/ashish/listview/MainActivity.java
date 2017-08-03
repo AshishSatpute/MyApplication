@@ -1,16 +1,20 @@
 package com.example.ashish.listview;
 
-import android.app.LauncherActivity;
+
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Adapter;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
+
+    public static  ArrayList<MyItem> items;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,19 +22,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //simpleListView();
         complexList();
+
     }
 
     private void complexList() {
-     List<MyItem> items  = new ArrayList<>();
-     items.add(new MyItem(R.drawable.ic_launcher_background,"Android"));
-        items.add(new MyItem(R.drawable.ic_launcher_background,"Windows"));
-        items.add(new MyItem(R.drawable.ic_launcher_background,"Apple"));
-        items.add(new MyItem(R.drawable.ic_launcher_background,"Rim"));
-        items.add(new MyItem(R.drawable.ic_launcher_background,"more...."));
+        items  = new ArrayList<>();
+        items.add(new MyItem(R.drawable.ic_android_black_24dp,"Android"));
+        items.add(new MyItem(R.drawable.ic_laptop_windows_black_24dp,"Windows"));
+        items.add(new MyItem(R.drawable.ic_flight_black_24dp,"Apple"));
+        items.add(new MyItem(R.drawable.ic_cloud_download_black_24dp,"Rim"));
+        items.add(new MyItem(R.drawable.ic_phonelink_ring_black_24dp,"more...."));
 
         MyAdapter adapter = new MyAdapter(this,items);
         ((ListView)findViewById(R.id.mobile)).setAdapter(adapter);
+        final ListView listView = findViewById(R.id.mobile);
 
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int pos, long id) {
+                Intent intent = new Intent(getApplicationContext(),ImageActivity.class);
+                intent.putExtra("poss",pos);
+                startActivity(intent);
+
+
+            }
+        });
     }
 
     private void simpleListView() {
@@ -51,4 +69,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }
