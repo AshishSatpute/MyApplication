@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         //simpleListView();
         complexList();
-
     }
 
     private void complexList() {
@@ -61,15 +60,9 @@ public class MainActivity extends AppCompatActivity{
         items.add(new MyItem(R.drawable.ic_vk,"Vk"));
 
 
-
-
-
-
-
         MyAdapter adapter = new MyAdapter(this,items);
         ((GridView)findViewById(R.id.grid_view)).setAdapter(adapter);
         final GridView gridView = findViewById(R.id.grid_view);
-
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -78,8 +71,6 @@ public class MainActivity extends AppCompatActivity{
                 Intent intent = new Intent(getApplicationContext(),ImageActivity.class);
                 intent.putExtra("poss",pos);
                 startActivity(intent);
-
-
             }
         });
     }
@@ -97,9 +88,6 @@ public class MainActivity extends AppCompatActivity{
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,dataSet);
 
         ((GridView)findViewById(R.id.grid_view)).setAdapter(adapter);
-
-
-
 
     }
 

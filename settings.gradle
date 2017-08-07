@@ -1,1 +1,1 @@
-include ':app', ':activity', ':interactivecommunication', ':myapplication', ':compoundview', ':listview', ':gridview'
+include ':app', ':activity', ':interactivecommunication', ':myapplication', ':compoundview', ':listview', ':gridview', ':activitylifecycle'

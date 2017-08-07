@@ -1,0 +1,15 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+:help
+
+Welcome to Gradle 4.1-milestone-1.
+
+To run a build, run gradlew <task> ...
+
+To see a list of available tasks, run gradlew tasks
+
+To see a list of command-line options, run gradlew --help
+
+To see more detail about a task, run gradlew help --task <task>
+
+BUILD SUCCESSFUL in 1m 58s
+1 actionable task: 1 executed

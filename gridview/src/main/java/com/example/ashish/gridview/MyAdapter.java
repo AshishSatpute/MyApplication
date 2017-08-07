@@ -51,5 +51,4 @@ public class MyAdapter extends BaseAdapter {
         return viewInflated;
 
     }
-
 }
