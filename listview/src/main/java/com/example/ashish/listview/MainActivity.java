@@ -60,6 +60,8 @@ public class MainActivity extends AppCompatActivity{
         items.add(new MyItem(R.drawable.ic_tumblr,"Tumblr"));
         items.add(new MyItem(R.drawable.ic_twitter,"Twitter"));
         items.add(new MyItem(R.drawable.ic_vk,"Vk"));
+
+
         MyAdapter adapter = new MyAdapter(this,items);
         ((ListView)findViewById(R.id.mobile)).setAdapter(adapter);
         final ListView listView = findViewById(R.id.mobile);
@@ -74,9 +76,8 @@ public class MainActivity extends AppCompatActivity{
                 startActivity(intent);
             }
         });
+
     }
-
-
     private void simpleListView() {
         List<String> dataSet = new ArrayList<>();
         dataSet.add("Android");
@@ -88,11 +89,7 @@ public class MainActivity extends AppCompatActivity{
         dataSet.add("many more..");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,dataSet);
-
         ((ListView)findViewById(R.id.mobile)).setAdapter(adapter);
-
-
-
 
     }
 
