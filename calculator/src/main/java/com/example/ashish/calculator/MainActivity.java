@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button Addition, Subtraction, Division, Multipication;
     EditText FirstNo, SecondNo;
     TextView textView;
-    int op1;
-    int op2;
-     int res;
+    float op1;
+    float op2;
+     float res;
     String fin;
 
     @Override
@@ -54,42 +54,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          switch (view.getId())
          {
              case R.id.add:
-                 op1= parseInt(FirstNo.getText().toString());
-                 op2= parseInt(SecondNo.getText().toString());
+                 op1= parseFloat(FirstNo.getText().toString());
+                 op2= parseFloat(SecondNo.getText().toString());
                  res=op1+op2;
-                 textView.setText(Integer.toString(res));
+                 textView.setText(Float.toString(res));
                  break;
 
              case R.id.sub:
 
-                 op1= parseInt(FirstNo.getText().toString());
-                 op2= parseInt(SecondNo.getText().toString());
+                 op1= parseFloat(FirstNo.getText().toString());
+                 op2= parseFloat(SecondNo.getText().toString());
                  res=op1-op2;
-                 textView.setText(Integer.toString(res));
+                 textView.setText(Float.toString(res));
                  break;
 
 
              case R.id.mult:
 
-                 op1= parseInt(FirstNo.getText().toString());
-                 op2= parseInt(SecondNo.getText().toString());
+                 op1= parseFloat(FirstNo.getText().toString());
+                 op2= parseFloat(SecondNo.getText().toString());
                  res=op1*op2;
-                 textView.setText(Integer.toString(res));
+                 textView.setText(Float.toString(res));
                  break;
 
 
              case R.id.div:
 
-                 op1= parseInt(FirstNo.getText().toString());
-                 op2= parseInt(SecondNo.getText().toString());
+                 op1= parseFloat(FirstNo.getText().toString());
+                 op2= parseFloat(SecondNo.getText().toString());
                  res=op1/op2;
-                 textView.setText(Integer.toString(res));
+                 textView.setText(Float.toString(res));
                  break;
 
          }
 
     }
 }
-
-
-
