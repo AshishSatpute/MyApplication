@@ -1,15 +1,20 @@
 package com.example.ashish.listview;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +22,7 @@ import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity{
 
+    private static final String TAG = MainActivity.class.getSimpleName();
     public static  ArrayList<MyItem> items;
     private LayoutInflater inflater;
     @Override
@@ -27,7 +33,7 @@ public class MainActivity extends AppCompatActivity{
         complexList();
     }
 
-    private void complexList() {
+    public void complexList() {
         items  = new ArrayList<>();
         items.add(new MyItem(R.drawable.ic_badoo,"Badoo"));
         items.add(new MyItem(R.drawable.ic_behance,"Behance"));
@@ -62,6 +68,7 @@ public class MainActivity extends AppCompatActivity{
         items.add(new MyItem(R.drawable.ic_vk,"Vk"));
 
 
+
         MyAdapter adapter = new MyAdapter(this,items);
         ((ListView)findViewById(R.id.mobile)).setAdapter(adapter);
         final ListView listView = findViewById(R.id.mobile);
@@ -78,6 +85,15 @@ public class MainActivity extends AppCompatActivity{
         });
 
     }
+    //today tasks
+    public void onAdd(View view){
+        Log.e(TAG, "onAdd: Ashish");
+        items.add(new MyItem(R.drawable.ic_google_plus,"New Items"));
+        MyAdapter adapter = new MyAdapter(this,items);
+        ((ListView)findViewById(R.id.mobile)).setAdapter(adapter);
+//
+    }
+
     private void simpleListView() {
         List<String> dataSet = new ArrayList<>();
         dataSet.add("Android");
@@ -87,6 +103,7 @@ public class MainActivity extends AppCompatActivity{
         dataSet.add("Symbians");
         dataSet.add("bada");
         dataSet.add("many more..");
+
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,dataSet);
         ((ListView)findViewById(R.id.mobile)).setAdapter(adapter);

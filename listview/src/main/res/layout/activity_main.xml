@@ -42,7 +42,8 @@
             android:gravity="center"
             android:onClick="onAdd"
 
-            android:text="Add" />
+            android:text="Add"
+            tools:ignore="OnClick" />
     </LinearLayout>
 
 
