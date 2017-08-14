@@ -11,11 +11,12 @@
             <option value="$PROJECT_DIR$/activity" />
             <option value="$PROJECT_DIR$/activitylifecycle" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/calculator" />
             <option value="$PROJECT_DIR$/compoundview" />
+            <option value="$PROJECT_DIR$/fragments" />
             <option value="$PROJECT_DIR$/gridview" />
             <option value="$PROJECT_DIR$/interactivecommunication" />
             <option value="$PROJECT_DIR$/listview" />
-            <option value="$PROJECT_DIR$/myapplication" />
             <option value="$PROJECT_DIR$/runtimechange2" />
             <option value="$PROJECT_DIR$/runtimechanges1" />
             <option value="$PROJECT_DIR$/simplevaluerescouce" />

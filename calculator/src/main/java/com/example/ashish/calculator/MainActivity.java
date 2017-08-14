@@ -6,14 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Switch;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import static java.lang.Float.parseFloat;
-import static java.lang.Integer.parseInt;
-import static java.lang.Integer.toUnsignedString;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -85,7 +79,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                  res=op1/op2;
                  textView.setText(Float.toString(res));
                  break;
-
          }
 
     }

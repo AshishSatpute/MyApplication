@@ -9,9 +9,6 @@ import android.view.ViewGroup;
 import android.widget.RatingBar;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class BrnFrag extends Fragment {
 
 
