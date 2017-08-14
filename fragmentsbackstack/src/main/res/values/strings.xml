@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fragments Back Stack</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="etUsNm">Enter User name</string>
+    <string name="etPass">Enter Password</string>
+    <string name="btnLogin">Login Button</string>
+    <string name="etNotiUs">Edit Text Notify Us</string>
+    <string name="btnNotify">Notify Button</string>
+</resources>

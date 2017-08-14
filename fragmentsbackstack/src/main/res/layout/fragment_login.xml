@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ashish.fragmentsbackstack.LoginFragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etUsNm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/etUsNm" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/etPass" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:background="#2b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/btnLogin" />
+
+</LinearLayout>
