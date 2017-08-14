@@ -15,7 +15,6 @@ public class BlankFragment extends Fragment {
     public BlankFragment() {// Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
