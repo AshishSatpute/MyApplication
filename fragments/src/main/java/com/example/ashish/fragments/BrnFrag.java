@@ -34,8 +34,10 @@ public class BrnFrag extends Fragment {
                 ((MainActivity)getActivity()).loadFrag(R.drawable.ic_badoo);
                 else if(v > 2f)
                     ((MainActivity)getActivity()).loadFrag(R.drawable.ic_deviantart);
-                else
+                else if(v> 3f)
                     ((MainActivity)getActivity()).loadFrag(R.drawable.ic_dribbble);
+                else
+                    ((MainActivity)getActivity()).loadFrag(R.drawable.ic_behance);
             }
         });
         return rootView;
