@@ -8,12 +8,17 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculator/calculator.iml" filepath="$PROJECT_DIR$/calculator/calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/compoundview/compoundview.iml" filepath="$PROJECT_DIR$/compoundview/compoundview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frag/frag.iml" filepath="$PROJECT_DIR$/frag/frag.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragmentbackstack2/fragmentbackstack2.iml" filepath="$PROJECT_DIR$/fragmentbackstack2/fragmentbackstack2.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragments/fragments.iml" filepath="$PROJECT_DIR$/fragments/fragments.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragmentsbackstack/fragmentsbackstack.iml" filepath="$PROJECT_DIR$/fragmentsbackstack/fragmentsbackstack.iml" />
       <module fileurl="file://$PROJECT_DIR$/gridview/gridview.iml" filepath="$PROJECT_DIR$/gridview/gridview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intentandintentfilter/intentandintentfilter.iml" filepath="$PROJECT_DIR$/intentandintentfilter/intentandintentfilter.iml" />
       <module fileurl="file://$PROJECT_DIR$/interactivecommunication/interactivecommunication.iml" filepath="$PROJECT_DIR$/interactivecommunication/interactivecommunication.iml" />
       <module fileurl="file://$PROJECT_DIR$/listview/listview.iml" filepath="$PROJECT_DIR$/listview/listview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materialdesign/materialdesign.iml" filepath="$PROJECT_DIR$/materialdesign/materialdesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/navi/navi.iml" filepath="$PROJECT_DIR$/navi/navi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/navigationdrawer/navigationdrawer.iml" filepath="$PROJECT_DIR$/navigationdrawer/navigationdrawer.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimechange2/runtimechange2.iml" filepath="$PROJECT_DIR$/runtimechange2/runtimechange2.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimechanges1/runtimechanges1.iml" filepath="$PROJECT_DIR$/runtimechanges1/runtimechanges1.iml" />
       <module fileurl="file://$PROJECT_DIR$/simplevaluerescouce/simplevaluerescouce.iml" filepath="$PROJECT_DIR$/simplevaluerescouce/simplevaluerescouce.iml" />

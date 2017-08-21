@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         textView = findViewById(R.id.textView3);
 
-
         Addition.setOnClickListener(this);
         Subtraction.setOnClickListener(this);
         Multipication.setOnClickListener(this);

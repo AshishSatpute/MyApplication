@@ -18,17 +18,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void loadFragment(Fragment fragment){
+    public void loadFragment(Fragment fragment) {
 
         String backStateName = fragment.getClass().getName();
         FragmentManager fragmentManager = getSupportFragmentManager();
-        boolean fragmentPopped = fragmentManager.popBackStackImmediate(backStateName,0);
-        if (!fragmentPopped){
+        boolean fragmentPopped = fragmentManager.popBackStackImmediate(backStateName, 0);
+        if (!fragmentPopped) {
             //
             FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.frame,fragment);
+            fragmentTransaction.replace(R.id.frame, fragment);
             fragmentTransaction.addToBackStack(backStateName);
             fragmentTransaction.commit();
         }
-
+    }
 }

@@ -1,1 +1,2 @@
-include ':app', ':activity', ':interactivecommunication', ':compoundview', ':listview', ':gridview', ':activitylifecycle', ':runtimechanges1', ':runtimechanges1', ':runtimechange2', ':simplevaluerescouce', ':calculator', ':fragments', ':fragmentsbackstack', ':fragmentbackstack2'
+include ':app', ':activity', ':interactivecommunication', ':compoundview', ':listview', ':gridview', ':activitylifecycle', ':runtimechanges1', ':runtimechanges1', ':runtimechange2', ':simplevaluerescouce', ':calculator', ':fragments', ':fragmentsbackstack', ':fragmentbackstack2', ':materialdesign', ':navigationdrawer', ':intentandintentfilter', ':navi', ':frag'
+

@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ashish.fragmentbackstack2.DashBoardFragment">
+
+    <EditText
+        android:id="@+id/etNotiUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/etNotiUs" />
+
+    <Button
+        android:background="#2b2"
+        android:id="@+id/btnNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnNotify"/>
+</LinearLayout>
