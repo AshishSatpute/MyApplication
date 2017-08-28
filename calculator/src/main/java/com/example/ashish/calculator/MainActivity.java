@@ -1,12 +1,17 @@
 package com.example.ashish.calculator;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.UnsupportedEncodingException;
+
 import static java.lang.Float.parseFloat;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -17,7 +22,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     float op1;
     float op2;
      float res;
-    String fin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +45,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    @SuppressLint("SetTextI18n")
-    @Override
+    public void validation(){
+
+        if(FirstNo.getText().toString().trim().length()==0){
+            Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
+        return;
+        }
+        else if (SecondNo.getText().toString().trim().length()==0) {
+            Toast.makeText(this, "Enter Second Number", Toast.LENGTH_SHORT).show();
+        return;
+        }
+    }
+
+
     public void onClick(View view) {
          switch (view.getId())
          {
              case R.id.add:
+
+                 if(FirstNo.getText().toString().trim().length()==0){
+                     Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
+                     return;
+                 }
+                 else if (SecondNo.getText().toString().trim().length()==0) {
+                     Toast.makeText(this, "Enter Second Number", Toast.LENGTH_SHORT).show();
+                     return;
+                 }
                  op1= parseFloat(FirstNo.getText().toString());
                  op2= parseFloat(SecondNo.getText().toString());
                  res=op1+op2;
@@ -55,6 +79,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
              case R.id.sub:
 
+                 if(FirstNo.getText().toString().trim().length()==0){
+                     Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
+                     return;
+                 }
+                 else if (SecondNo.getText().toString().trim().length()==0) {
+                     Toast.makeText(this, "Enter Second Number", Toast.LENGTH_SHORT).show();
+                     return;
+                 }
                  op1= parseFloat(FirstNo.getText().toString());
                  op2= parseFloat(SecondNo.getText().toString());
                  res=op1-op2;
@@ -64,6 +96,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
              case R.id.mult:
 
+                 if(FirstNo.getText().toString().trim().length()==0){
+                     Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
+                     return;
+                 }
+                 else if (SecondNo.getText().toString().trim().length()==0) {
+                     Toast.makeText(this, "Enter Second Number", Toast.LENGTH_SHORT).show();
+                     return;
+                 }
                  op1= parseFloat(FirstNo.getText().toString());
                  op2= parseFloat(SecondNo.getText().toString());
                  res=op1*op2;
@@ -73,6 +113,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
              case R.id.div:
 
+                 if(FirstNo.getText().toString().trim().length()==0){
+                     Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
+                     return;
+                 }
+                 else if (SecondNo.getText().toString().trim().length()==0) {
+                     Toast.makeText(this, "Enter Second Number", Toast.LENGTH_SHORT).show();
+                     return;
+                 }
                  op1= parseFloat(FirstNo.getText().toString());
                  op2= parseFloat(SecondNo.getText().toString());
                  res=op1/op2;
@@ -81,4 +129,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          }
 
     }
+
 }
