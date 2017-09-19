@@ -26,23 +26,23 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    public void onBtn(View view){
-        ((TextView)findViewById(R.id.textView))
-                .setText(String.valueOf(System.currentTimeMillis()));}
+    public void onBtn(View view) {
+        ((TextView) findViewById(R.id.textView))
+                .setText(String.valueOf(System.currentTimeMillis()));
+    }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString("timestamp",((TextView)findViewById(R.id.textView))
+        outState.putString("timestamp", ((TextView) findViewById(R.id.textView))
                 .getText().toString());
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        if(savedInstanceState != null)
-        {
-            ((TextView)findViewById(R.id.textView)).setText(savedInstanceState.getString("timestamp"));
+        if (savedInstanceState != null) {
+            ((TextView) findViewById(R.id.textView)).setText(savedInstanceState.getString("timestamp"));
         }
 
     }

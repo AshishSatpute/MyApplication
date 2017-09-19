@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.ashish.frag.Calls_tabs"
     android:background="#3f16"
-    android:id="@+id/callid"
-    >
+    android:id="@+id/callid">
 
     <TextView
         android:id="@+id/text"

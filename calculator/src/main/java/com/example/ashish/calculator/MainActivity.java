@@ -1,6 +1,4 @@
 package com.example.ashish.calculator;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,10 +8,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.UnsupportedEncodingException;
-
-import static java.lang.Float.parseFloat;
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button Addition, Subtraction, Division, Multipication;
@@ -21,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView textView;
     float op1;
     float op2;
-     float res;
+    float res;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,90 +38,78 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    public void onNext(View view){
 
-    public void validation(){
+        Bundle bundle = new Bundle();
+        bundle.putString("text",((TextView)findViewById(R.id.textView3)).getText().toString());
 
-        if(FirstNo.getText().toString().trim().length()==0){
-            Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
-        return;
+        Intent intent = new Intent(this,SecondActivity.class);
+        intent.putExtras(bundle);
+        startActivityForResult(intent,1000);
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1000 && resultCode == RESULT_OK && data != null) {
+            String text = data.getStringExtra("text");
+            ((TextView) findViewById(R.id.textView3)).setText(text);
         }
-        else if (SecondNo.getText().toString().trim().length()==0) {
+    }
+    public boolean validaton() {
+
+        if (FirstNo.getText().toString().trim().length() == 0) {
+            Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
+            return false;
+        } else if (SecondNo.getText().toString().trim().length() == 0) {
             Toast.makeText(this, "Enter Second Number", Toast.LENGTH_SHORT).show();
-        return;
+            return false;
+        } else {
+            return true;
         }
     }
 
 
     public void onClick(View view) {
-         switch (view.getId())
-         {
-             case R.id.add:
+        switch (view.getId()) {
+            case R.id.add:
+                if (validaton()) {
+                    op1 = Float.parseFloat(FirstNo.getText().toString());
+                    op2 = Float.parseFloat(SecondNo.getText().toString());
+                    res = op1 + op2;
+                    textView.setText("" + res);
+                }
+                break;
 
-                 if(FirstNo.getText().toString().trim().length()==0){
-                     Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
-                     return;
-                 }
-                 else if (SecondNo.getText().toString().trim().length()==0) {
-                     Toast.makeText(this, "Enter Second Number", Toast.LENGTH_SHORT).show();
-                     return;
-                 }
-                 op1= parseFloat(FirstNo.getText().toString());
-                 op2= parseFloat(SecondNo.getText().toString());
-                 res=op1+op2;
-                 textView.setText(Float.toString(res));
-                 break;
-
-             case R.id.sub:
-
-                 if(FirstNo.getText().toString().trim().length()==0){
-                     Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
-                     return;
-                 }
-                 else if (SecondNo.getText().toString().trim().length()==0) {
-                     Toast.makeText(this, "Enter Second Number", Toast.LENGTH_SHORT).show();
-                     return;
-                 }
-                 op1= parseFloat(FirstNo.getText().toString());
-                 op2= parseFloat(SecondNo.getText().toString());
-                 res=op1-op2;
-                 textView.setText(Float.toString(res));
-                 break;
+            case R.id.sub:
+                if (validaton()) {
+                    op1 = Float.parseFloat(FirstNo.getText().toString());
+                    op2 = Float.parseFloat(SecondNo.getText().toString());
+                    res = op1 - op2;
+                    textView.setText("" + res);
+                }
+                break;
 
 
-             case R.id.mult:
+            case R.id.mult:
 
-                 if(FirstNo.getText().toString().trim().length()==0){
-                     Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
-                     return;
-                 }
-                 else if (SecondNo.getText().toString().trim().length()==0) {
-                     Toast.makeText(this, "Enter Second Number", Toast.LENGTH_SHORT).show();
-                     return;
-                 }
-                 op1= parseFloat(FirstNo.getText().toString());
-                 op2= parseFloat(SecondNo.getText().toString());
-                 res=op1*op2;
-                 textView.setText(Float.toString(res));
-                 break;
+                if (validaton()) {
+                    op1 = Float.parseFloat(FirstNo.getText().toString());
+                    op2 = Float.parseFloat(SecondNo.getText().toString());
+                    res = op1 + op2;
+                    textView.setText("" + res);
+                }
+                break;
 
-
-             case R.id.div:
-
-                 if(FirstNo.getText().toString().trim().length()==0){
-                     Toast.makeText(this, "Enter First Number", Toast.LENGTH_SHORT).show();
-                     return;
-                 }
-                 else if (SecondNo.getText().toString().trim().length()==0) {
-                     Toast.makeText(this, "Enter Second Number", Toast.LENGTH_SHORT).show();
-                     return;
-                 }
-                 op1= parseFloat(FirstNo.getText().toString());
-                 op2= parseFloat(SecondNo.getText().toString());
-                 res=op1/op2;
-                 textView.setText(Float.toString(res));
-                 break;
-         }
-
+            case R.id.div:
+                if (validaton()) {
+                    op1 = Float.parseFloat(FirstNo.getText().toString());
+                    op2 = Float.parseFloat(SecondNo.getText().toString());
+                    res = op1 / op2;
+                    textView.setText("" + res);
+                }
+                break;
+        }
     }
-
 }

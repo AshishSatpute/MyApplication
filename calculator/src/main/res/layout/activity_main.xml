@@ -22,7 +22,8 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="53dp"
         app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingPrefix" />
 
     <TextView
         android:padding="5dp"
@@ -62,8 +63,6 @@
         android:layout_height="wrap_content"
         android:hint="Enter First No"
         android:textColor="@color/textcolor"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="144dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -120,12 +119,13 @@
         android:layout_marginEnd="40dp" />
 
     <TextView
-        android:hint="Result"
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginTop="60dp"
-        app:layout_constraintTop_toBottomOf="@+id/mult"
-        app:layout_constraintEnd_toStartOf="@+id/mult" />
+        android:hint="Result"
+        android:onClick="onNext"
+        app:layout_constraintEnd_toStartOf="@+id/mult"
+        app:layout_constraintTop_toBottomOf="@+id/mult" />
 
 </android.support.constraint.ConstraintLayout>

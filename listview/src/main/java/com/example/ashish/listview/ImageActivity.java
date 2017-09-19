@@ -22,7 +22,7 @@ public class ImageActivity extends AppCompatActivity {
         Log.e("ASHISH", "onCreate: " + position);
 
         MyItem myItem = MainActivity.items.get(position);
-        ((ImageView) findViewById(R.id.imageView)).setImageResource(myItem.getImage());
+        ((ImageView) findViewById(R.id.imageView)). setImageResource(myItem.getImage());
 
     }
 }

@@ -31,7 +31,7 @@ public class DashBoardFragment extends Fragment {
         rootView.findViewById(R.id.btnNotify).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity)getActivity()).loadFragment(NotificationFragment.getInstance());
+              // must correct  ((MainActivity)getActivity()).loadFragment(NotificationFragment.getInstance());
             }
         });
         return rootView;

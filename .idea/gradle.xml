@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/activity" />
             <option value="$PROJECT_DIR$/activitylifecycle" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/broadcastreciever" />
             <option value="$PROJECT_DIR$/calculator" />
             <option value="$PROJECT_DIR$/compoundview" />
             <option value="$PROJECT_DIR$/frag" />
@@ -22,11 +23,15 @@
             <option value="$PROJECT_DIR$/interactivecommunication" />
             <option value="$PROJECT_DIR$/listview" />
             <option value="$PROJECT_DIR$/materialdesign" />
+            <option value="$PROJECT_DIR$/mvpdemo" />
             <option value="$PROJECT_DIR$/navi" />
             <option value="$PROJECT_DIR$/navigationdrawer" />
+            <option value="$PROJECT_DIR$/notepad" />
+            <option value="$PROJECT_DIR$/playlist" />
             <option value="$PROJECT_DIR$/runtimechange2" />
             <option value="$PROJECT_DIR$/runtimechanges1" />
             <option value="$PROJECT_DIR$/simplevaluerescouce" />
+            <option value="$PROJECT_DIR$/uithread" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

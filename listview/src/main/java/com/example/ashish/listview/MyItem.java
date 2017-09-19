@@ -29,7 +29,4 @@ public class MyItem {
         this.image = image;
         this.name = name;
     }
-
-
-
 }

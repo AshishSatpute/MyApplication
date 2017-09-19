@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/activity/activity.iml" filepath="$PROJECT_DIR$/activity/activity.iml" />
       <module fileurl="file://$PROJECT_DIR$/activitylifecycle/activitylifecycle.iml" filepath="$PROJECT_DIR$/activitylifecycle/activitylifecycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcastreciever/broadcastreciever.iml" filepath="$PROJECT_DIR$/broadcastreciever/broadcastreciever.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculator/calculator.iml" filepath="$PROJECT_DIR$/calculator/calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/compoundview/compoundview.iml" filepath="$PROJECT_DIR$/compoundview/compoundview.iml" />
       <module fileurl="file://$PROJECT_DIR$/frag/frag.iml" filepath="$PROJECT_DIR$/frag/frag.iml" />
@@ -17,12 +18,16 @@
       <module fileurl="file://$PROJECT_DIR$/interactivecommunication/interactivecommunication.iml" filepath="$PROJECT_DIR$/interactivecommunication/interactivecommunication.iml" />
       <module fileurl="file://$PROJECT_DIR$/listview/listview.iml" filepath="$PROJECT_DIR$/listview/listview.iml" />
       <module fileurl="file://$PROJECT_DIR$/materialdesign/materialdesign.iml" filepath="$PROJECT_DIR$/materialdesign/materialdesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvpdemo/mvpdemo.iml" filepath="$PROJECT_DIR$/mvpdemo/mvpdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/navi/navi.iml" filepath="$PROJECT_DIR$/navi/navi.iml" />
       <module fileurl="file://$PROJECT_DIR$/navigationdrawer/navigationdrawer.iml" filepath="$PROJECT_DIR$/navigationdrawer/navigationdrawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/notepad/notepad.iml" filepath="$PROJECT_DIR$/notepad/notepad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/playlist/playlist.iml" filepath="$PROJECT_DIR$/playlist/playlist.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimechange2/runtimechange2.iml" filepath="$PROJECT_DIR$/runtimechange2/runtimechange2.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimechanges1/runtimechanges1.iml" filepath="$PROJECT_DIR$/runtimechanges1/runtimechanges1.iml" />
       <module fileurl="file://$PROJECT_DIR$/simplevaluerescouce/simplevaluerescouce.iml" filepath="$PROJECT_DIR$/simplevaluerescouce/simplevaluerescouce.iml" />
       <module fileurl="file://G:\Ashish\simplevaluerescouce\simplevalueresouce.iml" filepath="G:\Ashish\simplevaluerescouce\simplevalueresouce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uithread/uithread.iml" filepath="$PROJECT_DIR$/uithread/uithread.iml" />
     </modules>
   </component>
 </project>

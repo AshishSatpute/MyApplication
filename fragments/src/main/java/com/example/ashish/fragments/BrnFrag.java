@@ -16,7 +16,6 @@ public class BrnFrag extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -27,14 +26,14 @@ public class BrnFrag extends Fragment {
         rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                if(v > 1f)
-                ((MainActivity)getActivity()).loadFrag(R.drawable.ic_badoo);
-                else if(v > 2f)
-                    ((MainActivity)getActivity()).loadFrag(R.drawable.ic_deviantart);
-                else if(v> 3f)
-                    ((MainActivity)getActivity()).loadFrag(R.drawable.ic_dribbble);
+                if (v > 1f)
+                    ((MainActivity) getActivity()).loadFrag(R.drawable.ic_badoo);
+                else if (v > 2f)
+                    ((MainActivity) getActivity()).loadFrag(R.drawable.ic_deviantart);
+                else if (v > 3f)
+                    ((MainActivity) getActivity()).loadFrag(R.drawable.ic_dribbble);
                 else
-                    ((MainActivity)getActivity()).loadFrag(R.drawable.ic_behance);
+                    ((MainActivity) getActivity()).loadFrag(R.drawable.ic_behance);
             }
         });
         return rootView;
