@@ -69,6 +69,12 @@ public class MainActivity extends AppCompatActivity {
         items.add(new MyItem(R.drawable.ic_vk, "Vk"));
 
 
+
+
+        //
+
+
+
         MyAdapter adapter = new MyAdapter(this, items);
         ((ListView) findViewById(R.id.mobile)).setAdapter(adapter);
         final ListView listView = findViewById(R.id.mobile);
