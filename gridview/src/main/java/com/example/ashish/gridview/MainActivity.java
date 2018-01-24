@@ -90,5 +90,4 @@ public class MainActivity extends AppCompatActivity{
         ((GridView)findViewById(R.id.grid_view)).setAdapter(adapter);
 
     }
-
 }

@@ -50,6 +50,5 @@ public class MyAdapter extends BaseAdapter {
         ImageView imageView = viewInflated.findViewById(R.id.img);
         imageView.setImageResource(items.get(pos).getImage());
         return viewInflated;
-
     }
 }

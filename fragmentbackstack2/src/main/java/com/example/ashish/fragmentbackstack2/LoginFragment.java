@@ -30,7 +30,7 @@ public class LoginFragment extends Fragment {
         rootView.findViewById(R.id.btnLogin).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity)getActivity()).loadFragment(ImageActivity.getInstance());
+                //((MainActivity)getActivity()).loadFragment(ImageActivity.getInstance());
             }
         });
 

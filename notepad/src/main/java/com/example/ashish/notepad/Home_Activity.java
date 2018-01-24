@@ -35,9 +35,6 @@ public class Home_Activity extends AppCompatActivity {
             }
         });
 
-
-
-
         CreateNote();
     }
 
@@ -59,8 +56,6 @@ public class Home_Activity extends AppCompatActivity {
             e.printStackTrace();
         }
         Log.i("@Ashish", "Data from internal " + builder.toString());
-
-
 
         moreMethods();
     }
@@ -85,6 +80,5 @@ public class Home_Activity extends AppCompatActivity {
             Log.i("@Ashish", "File "+fl);
         }
     }
-
 
 }

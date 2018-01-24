@@ -12,6 +12,7 @@
         android:text="@string/etNotiUs" />
 
     <Button
+        android:layout_marginTop="50dp"
         android:background="#2b2"
         android:id="@+id/btnNotify"
         android:layout_width="match_parent"
