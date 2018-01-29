@@ -94,5 +94,4 @@ public class CarouselPagerAdapter extends FragmentPagerAdapter implements ViewPa
         Log.i(TAG, "getFragmentTag: ");
         return "android:switcher:" + context.pager.getId() + ":" + position;
     }
-
 }

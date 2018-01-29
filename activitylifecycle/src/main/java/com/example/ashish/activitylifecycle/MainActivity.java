@@ -1,6 +1,5 @@
 package com.example.ashish.activitylifecycle;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -8,12 +7,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = MainActivity.class.getSimpleName();
     Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,16 +30,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
     private class MyTask extends AsyncTask<Integer/*params*/, String/*Progress*/, Boolean/*Result*/> {
         public final String TAG = MyTask.class.getSimpleName();
 
         PD pd = new PD();
+
         @Override
         protected void onPreExecute() {
             //Ui thread
             super.onPreExecute();
             Log.i(TAG, "onPreExecute: ");
+
             /*progressDoalog = new ProgressDialog(MainActivity.this);
             // progressDoalog.setMax(100);
             progressDoalog.setMessage("Its loading....");
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             Log.i(TAG, "onPostExecute: ");
             pd.progressDialog.dismiss();
             //progressDoalog.dismiss();
-            Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
             startActivity(intent);
             //ui thread
         }

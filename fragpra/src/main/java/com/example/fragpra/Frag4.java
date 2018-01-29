@@ -32,7 +32,7 @@ public class Frag4 extends Fragment {
         rootView.findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity().getApplication(),SecondActivity.class);
+                Intent intent = new Intent(getActivity().getApplication(), SecondActivity.class);
                 startActivity(intent);
             }
         });

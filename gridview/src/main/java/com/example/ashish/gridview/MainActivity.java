@@ -13,9 +13,9 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
 
-    public static  ArrayList<MyItem> items;
+    public static ArrayList<MyItem> items;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,50 +26,50 @@ public class MainActivity extends AppCompatActivity{
     }
 
     private void complexList() {
-        items  = new ArrayList<>();
-        items.add(new MyItem(R.drawable.ic_badoo,"Badoo"));
-        items.add(new MyItem(R.drawable.ic_behance,"Behance"));
-        items.add(new MyItem(R.drawable.ic_deviantart,"Apple"));
-        items.add(new MyItem(R.drawable.ic_deviantart,"Deviantart"));
-        items.add(new MyItem(R.drawable.ic_facebook,"Facebook"));
-        items.add(new MyItem(R.drawable.ic_flickr,"Flickr"));
-        items.add(new MyItem(R.drawable.ic_google_plus,"Google"));
-        items.add(new MyItem(R.drawable.ic_instagram,"Instragram"));
-        items.add(new MyItem(R.drawable.ic_lastfm,"Lastfm"));
-        items.add(new MyItem(R.drawable.ic_linkedin,"LinkedIn"));
-        items.add(new MyItem(R.drawable.ic_pinterest,"Ponterest"));
-        items.add(new MyItem(R.drawable.ic_soundcloud,"Soundcloud"));
-        items.add(new MyItem(R.drawable.ic_swarm,"Swarm"));
-        items.add(new MyItem(R.drawable.ic_tumblr,"Tumblr"));
-        items.add(new MyItem(R.drawable.ic_twitter,"Twitter"));
-        items.add(new MyItem(R.drawable.ic_vk,"Vk"));
-        items.add(new MyItem(R.drawable.ic_badoo,"Badoo"));
-        items.add(new MyItem(R.drawable.ic_behance,"Behance"));
-        items.add(new MyItem(R.drawable.ic_deviantart,"Deviantart"));
-        items.add(new MyItem(R.drawable.ic_facebook,"Facebook"));
-        items.add(new MyItem(R.drawable.ic_flickr,"Flickr"));
-        items.add(new MyItem(R.drawable.ic_google_plus,"Google"));
-        items.add(new MyItem(R.drawable.ic_instagram,"Instragram"));
-        items.add(new MyItem(R.drawable.ic_lastfm,"Lastfm"));
-        items.add(new MyItem(R.drawable.ic_linkedin,"LinkedIn"));
-        items.add(new MyItem(R.drawable.ic_pinterest,"Ponterest"));
-        items.add(new MyItem(R.drawable.ic_soundcloud,"Soundcloud"));
-        items.add(new MyItem(R.drawable.ic_swarm,"Swarm"));
-        items.add(new MyItem(R.drawable.ic_tumblr,"Tumblr"));
-        items.add(new MyItem(R.drawable.ic_twitter,"Twitter"));
-        items.add(new MyItem(R.drawable.ic_vk,"Vk"));
+        items = new ArrayList<>();
+        items.add(new MyItem(R.drawable.ic_badoo, "Badoo"));
+        items.add(new MyItem(R.drawable.ic_behance, "Behance"));
+        items.add(new MyItem(R.drawable.ic_deviantart, "Apple"));
+        items.add(new MyItem(R.drawable.ic_deviantart, "Deviantart"));
+        items.add(new MyItem(R.drawable.ic_facebook, "Facebook"));
+        items.add(new MyItem(R.drawable.ic_flickr, "Flickr"));
+        items.add(new MyItem(R.drawable.ic_google_plus, "Google"));
+        items.add(new MyItem(R.drawable.ic_instagram, "Instragram"));
+        items.add(new MyItem(R.drawable.ic_lastfm, "Lastfm"));
+        items.add(new MyItem(R.drawable.ic_linkedin, "LinkedIn"));
+        items.add(new MyItem(R.drawable.ic_pinterest, "Ponterest"));
+        items.add(new MyItem(R.drawable.ic_soundcloud, "Soundcloud"));
+        items.add(new MyItem(R.drawable.ic_swarm, "Swarm"));
+        items.add(new MyItem(R.drawable.ic_tumblr, "Tumblr"));
+        items.add(new MyItem(R.drawable.ic_twitter, "Twitter"));
+        items.add(new MyItem(R.drawable.ic_vk, "Vk"));
+        items.add(new MyItem(R.drawable.ic_badoo, "Badoo"));
+        items.add(new MyItem(R.drawable.ic_behance, "Behance"));
+        items.add(new MyItem(R.drawable.ic_deviantart, "Deviantart"));
+        items.add(new MyItem(R.drawable.ic_facebook, "Facebook"));
+        items.add(new MyItem(R.drawable.ic_flickr, "Flickr"));
+        items.add(new MyItem(R.drawable.ic_google_plus, "Google"));
+        items.add(new MyItem(R.drawable.ic_instagram, "Instragram"));
+        items.add(new MyItem(R.drawable.ic_lastfm, "Lastfm"));
+        items.add(new MyItem(R.drawable.ic_linkedin, "LinkedIn"));
+        items.add(new MyItem(R.drawable.ic_pinterest, "Ponterest"));
+        items.add(new MyItem(R.drawable.ic_soundcloud, "Soundcloud"));
+        items.add(new MyItem(R.drawable.ic_swarm, "Swarm"));
+        items.add(new MyItem(R.drawable.ic_tumblr, "Tumblr"));
+        items.add(new MyItem(R.drawable.ic_twitter, "Twitter"));
+        items.add(new MyItem(R.drawable.ic_vk, "Vk"));
 
 
-        MyAdapter adapter = new MyAdapter(this,items);
-        ((GridView)findViewById(R.id.grid_view)).setAdapter(adapter);
+        MyAdapter adapter = new MyAdapter(this, items);
+        ((GridView) findViewById(R.id.grid_view)).setAdapter(adapter);
         final GridView gridView = findViewById(R.id.grid_view);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long id) {
-                Intent intent = new Intent(getApplicationContext(),ImageActivity.class);
-                intent.putExtra("poss",pos);
+                Intent intent = new Intent(getApplicationContext(), ImageActivity.class);
+                intent.putExtra("poss", pos);
                 startActivity(intent);
             }
         });
@@ -85,9 +85,9 @@ public class MainActivity extends AppCompatActivity{
         dataSet.add("bada");
         dataSet.add("many more..");
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,dataSet);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, dataSet);
 
-        ((GridView)findViewById(R.id.grid_view)).setAdapter(adapter);
+        ((GridView) findViewById(R.id.grid_view)).setAdapter(adapter);
 
     }
 }

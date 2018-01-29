@@ -22,7 +22,8 @@ public class Frag1 extends Fragment {
         return new Frag1();
     }
 
-    public Frag1() {}
+    public Frag1() {
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

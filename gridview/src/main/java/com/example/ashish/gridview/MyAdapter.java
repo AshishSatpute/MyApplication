@@ -41,6 +41,7 @@ public class MyAdapter extends BaseAdapter {
     public long getItemId(int pos) {
         return pos * 2;
     }
+
     @Override
     public View getView(int pos, View view, ViewGroup viewGroup) {
         View viewInflated = inflater.inflate(R.layout.list_item, null, false);

@@ -30,6 +30,7 @@
       <module fileurl="file://$PROJECT_DIR$/payudemo/payudemo.iml" filepath="$PROJECT_DIR$/payudemo/payudemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/playlist/playlist.iml" filepath="$PROJECT_DIR$/playlist/playlist.iml" />
       <module fileurl="file://$PROJECT_DIR$/reclycerview/reclycerview.iml" filepath="$PROJECT_DIR$/reclycerview/reclycerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerdailogprogress/recyclerdailogprogress.iml" filepath="$PROJECT_DIR$/recyclerdailogprogress/recyclerdailogprogress.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimechange2/runtimechange2.iml" filepath="$PROJECT_DIR$/runtimechange2/runtimechange2.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimechanges1/runtimechanges1.iml" filepath="$PROJECT_DIR$/runtimechanges1/runtimechanges1.iml" />

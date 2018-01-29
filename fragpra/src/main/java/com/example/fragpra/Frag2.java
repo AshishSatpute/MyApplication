@@ -17,7 +17,8 @@ public class Frag2 extends Fragment {
         return new Frag2();
     }
 
-    public Frag2() {}
+    public Frag2() {
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
