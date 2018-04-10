@@ -11,19 +11,13 @@ import android.widget.ImageView;
 
 public class BlankFragment extends Fragment {
 
-
-    public BlankFragment() {// Required empty public constructor
-    }
+    public BlankFragment() {}
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View view = inflater.inflate(R.layout.fragment_blank, container, false);
-
         int img = getArguments().getInt("img");
         ((ImageView) view.findViewById(R.id.imgVw)).setImageResource(img);
-
         return view;
     }
 }

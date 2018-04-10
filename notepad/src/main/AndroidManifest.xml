@@ -10,20 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Note">
+
+        </activity>
+        <activity android:name=".Home_Activity" />
+        <activity android:name=".Splash_Activity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".Home_Activity" />
-        <activity android:name=".Splash_Activity" />
+
+        </activity>>
         <activity android:name=".Test_Activity" />
         <activity android:name=".Edit_Activity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

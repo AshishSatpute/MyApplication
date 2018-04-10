@@ -38,6 +38,7 @@ public class AddToDataSource extends DatabaseHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put(COLUMN_USERNAME, addDataModel.getName());
         contentValues.put(COLUMN_PASSWORD, addDataModel.getPassword());
+        Log.i(TAG,addDataModel.getName().toString());
         long insertedId = database.insert(TABLE_NAME_ADD, null, contentValues);
         Log.i(TAG, "addData: " + insertedId);
     }

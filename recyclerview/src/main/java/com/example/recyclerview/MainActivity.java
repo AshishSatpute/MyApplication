@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadData() {
         Log.i(TAG, "loadData: ");
 
-        /*StringRequest stringRequest = new StringRequest(Request.Method.GET
+        StringRequest stringRequest = new StringRequest(Request.Method.GET
                 , URL_DATA,
                 new Response.Listener<String>() {
                     @Override
@@ -86,6 +86,6 @@ public class MainActivity extends AppCompatActivity {
                 });
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);*/
+        requestQueue.add(stringRequest);
     }
 }
