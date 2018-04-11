@@ -2,6 +2,7 @@ package com.ashish.sqlitedemo;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
@@ -12,8 +13,8 @@ public class AddDataSource extends DatabaseHelper {
 
     SQLiteDatabase database;
     private static final String TABLE_NAME_LOGIN = "save";
-    private static final String COLUMN_USERNAME = "username";
-    private static final String COLUMN_PASSWORD = "password";
+    public static final String COLUMN_USERNAME = "username";
+    public static final String COLUMN_PASSWORD = "password";
 
     public static final String CREATE_TABLE_LOGIN = " CREATE TABLE "
             + TABLE_NAME_LOGIN
@@ -42,4 +43,29 @@ public class AddDataSource extends DatabaseHelper {
         Log.i(TAG,"::"+dataModel.getName());
         Log.i(TAG,"::"+dataModel.getPass());
     }
+
+    public Cursor read(SQLiteDatabase database){
+
+        String[] projections = {COLUMN_USERNAME,COLUMN_PASSWORD};
+
+        Cursor cursor = database.query(TABLE_NAME_LOGIN,projections,null,null,null,null,null);
+        return cursor;
+    }
+
+
+    /*private void read() {
+
+        SQLiteDatabase database = getReadableDatabase();
+
+        Cursor cursor = read(database);
+
+        while (cursor.moveToNext()) {
+            DataModel dataModel= new DataModel();
+
+            String name= cursor.getString(cursor.getColumnIndex(COLUMN_USERNAME));
+            String pass= cursor.getString(cursor.getColumnIndex(COLUMN_PASSWORD));
+
+        }
+    }*/
+
 }
