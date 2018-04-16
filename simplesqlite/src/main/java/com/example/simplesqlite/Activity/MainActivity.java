@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ArrayList<LoginDataModel> loginDataModelArrayList = loginDataSource.selectLoginDetails();
         Toast.makeText(context, "Ashish " + loginDataModelArrayList.size(),Toast.LENGTH_SHORT).show();
         Log.e(TAG, "getLoginDetails: " + loginDataModelArrayList);
+
     }
 
     private void doLogin() {

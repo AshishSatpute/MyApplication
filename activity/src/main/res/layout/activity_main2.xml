@@ -7,12 +7,6 @@
     tools:context="com.example.activity.Main2Activity">
 
 
-    <android.support.v7.widget.SwitchCompat
-        android:id="@+id/sb"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -63,10 +63,12 @@ public class LoginDataSource extends DatabaseHelper {
                 loginDataModel.setPassword(cursor.getString(cursor.getColumnIndex(COLUMN_PASSWORD)));
 
                 loginDataModelArrayList.add(loginDataModel);
+
+
             }
         }
-        cursor.close();
-        database.close();
+       // cursor.close();
+        //database.close();
         return loginDataModelArrayList;
     }
 }
