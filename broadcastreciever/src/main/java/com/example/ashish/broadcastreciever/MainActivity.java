@@ -1,21 +1,12 @@
 package com.example.ashish.broadcastreciever;
 
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    BroadcastReceiver receiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-
-
-        }
-    };
+    /*BroadcastReceiver by using xml
+            it will use when app is not running*/
 
 
     @Override
