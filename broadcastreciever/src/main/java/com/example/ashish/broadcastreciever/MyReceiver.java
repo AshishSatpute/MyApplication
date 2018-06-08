@@ -19,5 +19,9 @@ public class MyReceiver extends BroadcastReceiver {
     {
         Toast.makeText(context, "Off", Toast.LENGTH_SHORT).show();
     }
+
+
+
+    
     }
 }
