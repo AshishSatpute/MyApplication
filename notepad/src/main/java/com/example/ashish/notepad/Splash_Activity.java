@@ -31,8 +31,8 @@ public class Splash_Activity extends AppCompatActivity {
 
 
         final ImageView imageView = findViewById(R.id.imageView);
-        final Animation animation_1 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.rotate);
-        final Animation animation_2 = AnimationUtils.loadAnimation(getBaseContext(),R.anim.antirotate);
+        final Animation animation_1 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.rotate);
+        final Animation animation_2 = AnimationUtils.loadAnimation(getBaseContext(), R.anim.antirotate);
 
         imageView.startAnimation(animation_2);
         animation_2.setAnimationListener(new Animation.AnimationListener() {
@@ -61,7 +61,7 @@ public class Splash_Activity extends AppCompatActivity {
             @Override
             public void onAnimationEnd(Animation animation) {
                 finish();
-                Intent i = new Intent(getBaseContext(),MainActivity.class);
+                Intent i = new Intent(getBaseContext(), MainActivity.class);
                 startActivity(i);
             }
 
@@ -71,10 +71,5 @@ public class Splash_Activity extends AppCompatActivity {
             }
         });
 
-
-
-
-
     }
 }
-

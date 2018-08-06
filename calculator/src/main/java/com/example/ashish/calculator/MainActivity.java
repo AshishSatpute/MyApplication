@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Addition = (Button) findViewById(R.id.add);
-        Subtraction = (Button) findViewById(R.id.sub);
-        Multipication = (Button) findViewById(R.id.mult);
-        Division = (Button) findViewById(R.id.div);
+        Addition = findViewById(R.id.add);
+        Subtraction = findViewById(R.id.sub);
+        Multipication = findViewById(R.id.mult);
+        Division = findViewById(R.id.div);
 
         FirstNo = findViewById(R.id.editText1);
         SecondNo = findViewById(R.id.editText2);

@@ -36,5 +36,4 @@ public class DashBoardFragment extends Fragment {
         });
         return rootView;
     }
-
 }

@@ -15,7 +15,7 @@ public class AddToDataSource extends DatabaseHelper {
     private String TAG = AddToDataSource.class.getSimpleName();
     private SQLiteDatabase database;
 
-    private static final String TABLE_NAME_ADD = "add";
+    private static final String TABLE_NAME_ADD = "addDB";
     private static final String COLUMN_USERNAME = "username";
     private static final String COLUMN_PASSWORD = "password";
 
@@ -23,8 +23,7 @@ public class AddToDataSource extends DatabaseHelper {
         super(context);
     }
 
-    public static final String CREATE_TABLE_ADD = " CREATE TABLE "
-            + TABLE_NAME_ADD
+    public static final String CREATE_TABLE_ADD = " CREATE TABLE " + TABLE_NAME_ADD
             + " ("
             + COLUMN_USERNAME
             + " TEXT NOT NULL, "

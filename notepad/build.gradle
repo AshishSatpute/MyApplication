@@ -35,10 +35,10 @@ dependencies {
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
 
-        compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+        implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
 
     })
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
 }
 repositories {

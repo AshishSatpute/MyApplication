@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Ashish.iml" filepath="$PROJECT_DIR$/Ashish.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/activity/activity.iml" filepath="$PROJECT_DIR$/activity/activity.iml" />
       <module fileurl="file://$PROJECT_DIR$/activitylifecycle/activitylifecycle.iml" filepath="$PROJECT_DIR$/activitylifecycle/activitylifecycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcastreceiverexample/broadcastreceiverexample.iml" filepath="$PROJECT_DIR$/broadcastreceiverexample/broadcastreceiverexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/broadcastreciever/broadcastreciever.iml" filepath="$PROJECT_DIR$/broadcastreciever/broadcastreciever.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculator/calculator.iml" filepath="$PROJECT_DIR$/calculator/calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/carousellayout/carousellayout.iml" filepath="$PROJECT_DIR$/carousellayout/carousellayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/carousellayout2/carousellayout2.iml" filepath="$PROJECT_DIR$/carousellayout2/carousellayout2.iml" />
       <module fileurl="file://$PROJECT_DIR$/compoundview/compoundview.iml" filepath="$PROJECT_DIR$/compoundview/compoundview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datepicker/datepicker.iml" filepath="$PROJECT_DIR$/datepicker/datepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/frag/frag.iml" filepath="$PROJECT_DIR$/frag/frag.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragmentbackstack2/fragmentbackstack2.iml" filepath="$PROJECT_DIR$/fragmentbackstack2/fragmentbackstack2.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragments/fragments.iml" filepath="$PROJECT_DIR$/fragments/fragments.iml" />
@@ -19,9 +20,12 @@
       <module fileurl="file://$PROJECT_DIR$/fragpra/fragpra.iml" filepath="$PROJECT_DIR$/fragpra/fragpra.iml" />
       <module fileurl="file://$PROJECT_DIR$/gridview/gridview.iml" filepath="$PROJECT_DIR$/gridview/gridview.iml" />
       <module fileurl="file://$PROJECT_DIR$/homefrag/homefrag.iml" filepath="$PROJECT_DIR$/homefrag/homefrag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagepicker/imagepicker.iml" filepath="$PROJECT_DIR$/imagepicker/imagepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/intentandintentfilter/intentandintentfilter.iml" filepath="$PROJECT_DIR$/intentandintentfilter/intentandintentfilter.iml" />
       <module fileurl="file://$PROJECT_DIR$/interactivecommunication/interactivecommunication.iml" filepath="$PROJECT_DIR$/interactivecommunication/interactivecommunication.iml" />
       <module fileurl="file://$PROJECT_DIR$/jonscheduler/jonscheduler.iml" filepath="$PROJECT_DIR$/jonscheduler/jonscheduler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kbatendance/kbatendance.iml" filepath="$PROJECT_DIR$/kbatendance/kbatendance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lifecycler/lifecycler.iml" filepath="$PROJECT_DIR$/lifecycler/lifecycler.iml" />
       <module fileurl="file://$PROJECT_DIR$/listview/listview.iml" filepath="$PROJECT_DIR$/listview/listview.iml" />
       <module fileurl="file://$PROJECT_DIR$/loginmodule/loginmodule.iml" filepath="$PROJECT_DIR$/loginmodule/loginmodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/materialdesign/materialdesign.iml" filepath="$PROJECT_DIR$/materialdesign/materialdesign.iml" />
@@ -39,17 +43,22 @@
       <module fileurl="file://$PROJECT_DIR$/roomsqlite/roomsqlite.iml" filepath="$PROJECT_DIR$/roomsqlite/roomsqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimechange2/runtimechange2.iml" filepath="$PROJECT_DIR$/runtimechange2/runtimechange2.iml" />
       <module fileurl="file://$PROJECT_DIR$/runtimechanges1/runtimechanges1.iml" filepath="$PROJECT_DIR$/runtimechanges1/runtimechanges1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rv1/rv1.iml" filepath="$PROJECT_DIR$/rv1/rv1.iml" />
       <module fileurl="file://$PROJECT_DIR$/scanner/scanner.iml" filepath="$PROJECT_DIR$/scanner/scanner.iml" />
       <module fileurl="file://$PROJECT_DIR$/school/school.iml" filepath="$PROJECT_DIR$/school/school.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/session/session.iml" filepath="$PROJECT_DIR$/session/session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sessions/sessions.iml" filepath="$PROJECT_DIR$/sessions/sessions.iml" />
       <module fileurl="file://$PROJECT_DIR$/simpleback/simpleback.iml" filepath="$PROJECT_DIR$/simpleback/simpleback.iml" />
       <module fileurl="file://$PROJECT_DIR$/simplesqlite/simplesqlite.iml" filepath="$PROJECT_DIR$/simplesqlite/simplesqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/simplevaluerescouce/simplevaluerescouce.iml" filepath="$PROJECT_DIR$/simplevaluerescouce/simplevaluerescouce.iml" />
-      <module fileurl="file://G:/Ashish/simplevaluerescouce/simplevalueresouce.iml" filepath="G:/Ashish/simplevaluerescouce/simplevalueresouce.iml" />
       <module fileurl="file://$PROJECT_DIR$/spinner/spinner.iml" filepath="$PROJECT_DIR$/spinner/spinner.iml" />
       <module fileurl="file://$PROJECT_DIR$/sqlite/sqlite.iml" filepath="$PROJECT_DIR$/sqlite/sqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/sqlitedemo/sqlitedemo.iml" filepath="$PROJECT_DIR$/sqlitedemo/sqlitedemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/uithread/uithread.iml" filepath="$PROJECT_DIR$/uithread/uithread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volleyexam/volleyexam.iml" filepath="$PROJECT_DIR$/volleyexam/volleyexam.iml" />
       <module fileurl="file://$PROJECT_DIR$/volleyexample/volleyexample.iml" filepath="$PROJECT_DIR$/volleyexample/volleyexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webview/webview.iml" filepath="$PROJECT_DIR$/webview/webview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wv/wv.iml" filepath="$PROJECT_DIR$/wv/wv.iml" />
     </modules>
   </component>
 </project>

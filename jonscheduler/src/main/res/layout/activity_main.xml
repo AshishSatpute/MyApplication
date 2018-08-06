@@ -7,24 +7,67 @@
     tools:context=".MainActivity">
 
 
-<Button
-    app:layout_constraintTop_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    android:onClick="start"
-    android:text="start"
-    android:id="@+id/start"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
-
     <Button
-        app:layout_constraintTop_toBottomOf="@id/start"
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="start"
+        android:text="start"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="stop"
-        android:text="stop"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <Button
         android:id="@+id/stop"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />com.ash.jonscheduler
+        android:layout_height="wrap_content"
+        android:onClick="stop"
+        android:text="stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="140dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stop" />
+
+
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+
+    </Button>
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="236dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="303dp" />
 </android.support.constraint.ConstraintLayout>

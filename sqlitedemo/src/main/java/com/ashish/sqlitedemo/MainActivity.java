@@ -2,7 +2,6 @@ package com.ashish.sqlitedemo;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,15 +24,16 @@ public class MainActivity extends AppCompatActivity {
 
         editText1 = findViewById(R.id.name);
         editText2 = findViewById(R.id.pass);
-
         button  =  findViewById(R.id.save);
+        button1 = findViewById(R.id.btnRead);
+
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 doLogin();
             }
         });
-        button1 = findViewById(R.id.btnRead);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,4 +70,4 @@ public class MainActivity extends AppCompatActivity {
             Log.i("Ashish", "read: "+info);
         }
     }
-}d
+}

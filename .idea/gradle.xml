@@ -11,11 +11,13 @@
             <option value="$PROJECT_DIR$/activity" />
             <option value="$PROJECT_DIR$/activitylifecycle" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/broadcastreceiverexample" />
             <option value="$PROJECT_DIR$/broadcastreciever" />
             <option value="$PROJECT_DIR$/calculator" />
             <option value="$PROJECT_DIR$/carousellayout" />
             <option value="$PROJECT_DIR$/carousellayout2" />
             <option value="$PROJECT_DIR$/compoundview" />
+            <option value="$PROJECT_DIR$/datepicker" />
             <option value="$PROJECT_DIR$/frag" />
             <option value="$PROJECT_DIR$/fragmentbackstack2" />
             <option value="$PROJECT_DIR$/fragments" />
@@ -23,9 +25,12 @@
             <option value="$PROJECT_DIR$/fragpra" />
             <option value="$PROJECT_DIR$/gridview" />
             <option value="$PROJECT_DIR$/homefrag" />
+            <option value="$PROJECT_DIR$/imagepicker" />
             <option value="$PROJECT_DIR$/intentandintentfilter" />
             <option value="$PROJECT_DIR$/interactivecommunication" />
             <option value="$PROJECT_DIR$/jonscheduler" />
+            <option value="$PROJECT_DIR$/kbatendance" />
+            <option value="$PROJECT_DIR$/lifecycler" />
             <option value="$PROJECT_DIR$/listview" />
             <option value="$PROJECT_DIR$/loginmodule" />
             <option value="$PROJECT_DIR$/materialdesign" />
@@ -43,16 +48,22 @@
             <option value="$PROJECT_DIR$/roomsqlite" />
             <option value="$PROJECT_DIR$/runtimechange2" />
             <option value="$PROJECT_DIR$/runtimechanges1" />
+            <option value="$PROJECT_DIR$/rv1" />
             <option value="$PROJECT_DIR$/scanner" />
             <option value="$PROJECT_DIR$/school" />
+            <option value="$PROJECT_DIR$/service" />
+            <option value="$PROJECT_DIR$/session" />
+            <option value="$PROJECT_DIR$/sessions" />
             <option value="$PROJECT_DIR$/simpleback" />
             <option value="$PROJECT_DIR$/simplesqlite" />
             <option value="$PROJECT_DIR$/simplevaluerescouce" />
             <option value="$PROJECT_DIR$/spinner" />
             <option value="$PROJECT_DIR$/sqlite" />
             <option value="$PROJECT_DIR$/sqlitedemo" />
-            <option value="$PROJECT_DIR$/uithread" />
+            <option value="$PROJECT_DIR$/volleyexam" />
             <option value="$PROJECT_DIR$/volleyexample" />
+            <option value="$PROJECT_DIR$/webview" />
+            <option value="$PROJECT_DIR$/wv" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private JobScheduler jobScheduler;
     private JobInfo jobInfo;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         //create a job
         ComponentName componentName = new ComponentName(this,MJobSchedure.class);
         JobInfo.Builder builder = new JobInfo.Builder(JOB_ID,componentName);
-        builder.setPeriodic(1000);
+        builder.setPeriodic(1);
         builder.setRequiredNetworkType(JobInfo.NETWORK_TYPE_ANY);
         builder.setPersisted(true);
         jobInfo = builder.build();
@@ -46,5 +45,4 @@ public class MainActivity extends AppCompatActivity {
         jobScheduler.schedule(jobInfo);
         Toast.makeText(this, "job Schedule", Toast.LENGTH_SHORT).show();
     }
-
 }

@@ -8,9 +8,6 @@ public class MainActivity extends AppCompatActivity {
     /*BroadcastReceiver by using xml
             it will use when app is not running*/
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private class  hhky5MyTask extends AsyncTask<Integer/*params*/, String/*Progress*/, Boolean/*Result*/> {
+    private class MyTask extends AsyncTask<Integer/*params*/, String/*Progress*/, Boolean/*Result*/> {
         public final String TAG = MyTask.class.getSimpleName();
 
         PD pd = new PD();

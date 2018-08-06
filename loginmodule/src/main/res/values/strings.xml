@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">LoginModule</string>
+    <string name="registration">Registration</string>
+    <string name="Email">Email</string>
+    <string name="user_name">User Name</string>
+    <string name="nameerror">Invalid Name</string>
+    <string name="email_error">Invalid Email</string>
+    <string name="designation_error">Invalid Designation</string>
+    <string name="password_error">Invalid password</string>
+    <string name="number_error">Invalid Number</string>
 </resources>
