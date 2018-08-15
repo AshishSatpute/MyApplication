@@ -22,5 +22,12 @@
         android:text="Button"
          />
 
+    <TextView
+        android:hint="hiiiii"
+        android:id="@+id/tv"
+        android:layout_margin="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 
 </LinearLayout>

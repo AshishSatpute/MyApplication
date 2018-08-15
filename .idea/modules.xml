@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/calculator/calculator.iml" filepath="$PROJECT_DIR$/calculator/calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/carousellayout/carousellayout.iml" filepath="$PROJECT_DIR$/carousellayout/carousellayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/carousellayout2/carousellayout2.iml" filepath="$PROJECT_DIR$/carousellayout2/carousellayout2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chonometer/chonometer.iml" filepath="$PROJECT_DIR$/chonometer/chonometer.iml" />
       <module fileurl="file://$PROJECT_DIR$/compoundview/compoundview.iml" filepath="$PROJECT_DIR$/compoundview/compoundview.iml" />
       <module fileurl="file://$PROJECT_DIR$/datepicker/datepicker.iml" filepath="$PROJECT_DIR$/datepicker/datepicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/frag/frag.iml" filepath="$PROJECT_DIR$/frag/frag.iml" />
